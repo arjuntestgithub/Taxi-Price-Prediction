@@ -30,5 +30,5 @@ High variance in fares due to external factors like surge pricing,Scalability fo
 Applications:---Taxi or ride-hailing companies to provide fare estimates to customers,Dynamic pricing strategies,
 Optimization of routes and cost management for service providers,Improved customer satisfaction by offering transparent pricing.
 
-
+https://github.com/arjuntestgithub/Taxi-Price-Prediction/blob/cd099f62744b00f31743872eb02519905b686212/home2.png
 
