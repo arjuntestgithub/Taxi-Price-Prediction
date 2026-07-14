@@ -32,4 +32,5 @@ Optimization of routes and cost management for service providers,Improved custom
 
 https://github.com/arjuntestgithub/Taxi-Price-Prediction/blob/cd099f62744b00f31743872eb02519905b686212/home2.png
 https://github.com/arjuntestgithub/Taxi-Price-Prediction/blob/54214d13f5e07c5308fb5687f092d26c8d5c18f2/home.png
+![image alt]("https://github.com/arjuntestgithub/Taxi-Price-Prediction/blob/cd099f62744b00f31743872eb02519905b686212/home2.png")
 
