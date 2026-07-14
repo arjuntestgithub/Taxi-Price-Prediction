@@ -1,0 +1,212 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: lightblue;
+    color: black;
+    padding: 20px 0;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    padding-right: 40px; /* Add padding to the right of "Cara" text */
+}
+
+
+.logo a.cara-link {
+    font-family: cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px; /* Make the border radius half of the height */
+    background-color: transparent;
+    transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #888; /* Change background color on hover */
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Make the border radius half of the height */
+    background-color: black;
+    transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+.right-section a.login-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+.right-section a.login-btn:hover {
+    background-color: #ccc; /* Change background color on hover */
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.mid-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 80%;
+    
+}
+
+.left-side, .right-side {
+    width: 40%; /* Set width for left and right sides */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.map-container, .form-container {
+    padding: 20px; /* Add padding inside each container */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.map {
+    height: 500px; /* Set height for the map */
+    border-radius: 10px;
+}
+.form-container {
+    padding-top: 70px;
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cabfarewidth {
+    width: calc(100% - 35px);
+}
+
+.form-container input[type="datetime-local"],
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container select {
+    width: calc(100% - 100px); /* Set width to 100% minus padding */
+    height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif; /* Use a fallback font */
+    font-size: 16px; /* Adjust font size as needed */
+    color: #666; /* Placeholder text color */
+    border-radius: 10px;
+}
+
+.form-container input[type="datetime-local"]::placeholder,
+.form-container input[type="text"]::placeholder,
+.form-container input[type="number"]::placeholder,
+.form-container select::placeholder {
+    font-family: "Uber Move", Arial, sans-serif; /* Use Uber Move font */
+    font-size: 16px; /* Adjust font size as needed */
+    color: #bdbdbd; /* Placeholder text color */
+    border-radius: 10px;
+}
+
+#fare {
+    /* width: calc(100% - 300px); */
+    width: 100%;
+    height: 50px; /* Increased height for better visibility */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    color: green;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px; /* Vertically center the text */
+    transition: border-color 0.3s ease;
+}
+
+#fare:hover {
+    border-color: #999;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#fare::placeholder {
+    color: #bdbdbd;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: green;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
