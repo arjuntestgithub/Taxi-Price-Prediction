@@ -1,0 +1,11 @@
+Flask
+geopy
+pandas
+numpy
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+pymysql
+statsmodels
