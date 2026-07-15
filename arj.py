@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, jsonify
 from datetime import datetime
 from geopy.distance import geodesic
 import pickle
+import os
 
 
 app = Flask(__name__,template_folder=".",static_url_path="/static")
@@ -57,8 +58,18 @@ def predict():
     return render_template('index.html',fare = f" fare = ${ 0.00 }")
 
 
-if __name__ == '__main__':
-    app.run(debug = True)
+# if __name__ == '__main__':
+#     app.run(debug = True)
+
+# import os
+
+if __name__ == "__main__":
+    port = 5000
+    app.run(
+        host="0.0.0.0",
+        port=port,
+        debug=False
+    )
 
 
 
