@@ -110,23 +110,32 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align items to the top */
-    height: 80%;
+    /* height: 80%; */
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
     
 }
 
 .left-side, .right-side {
-    width: 40%; /* Set width for left and right sides */
-    box-sizing: border-box; /* Include padding in width calculation */
+    /* width: 40%; /* Set width for left and right sides */
+    /* box-sizing: border-box; Include padding in width calculation */ 
+    flex: 1;
+    min-width: 320px;
+    max-width: 600px;
 }
 
 .map-container, .form-container {
-    padding: 20px; /* Add padding inside each container */
-    box-sizing: border-box; /* Include padding in width calculation */
+    /* padding: 20px; Add padding inside each container */
+    /* box-sizing: border-box; Include padding in width calculation */
+    width: 100%;
+    padding: 20px;
 }
 
 .map {
     height: 500px; /* Set height for the map */
     border-radius: 10px;
+    width: 100%;
 }
 .form-container {
     padding-top: 70px;
@@ -144,11 +153,11 @@ footer {
 .form-container input[type="text"],
 .form-container input[type="number"],
 .form-container select {
-    width: calc(100% - 100px); /* Set width to 100% minus padding */
-    height: 40px;
+    width: 100%; /* Set width to 100% minus padding */
+    height: 45px;
     padding: 10px;
     box-sizing: border-box;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-family: Arial, sans-serif; /* Use a fallback font */
     font-size: 16px; /* Adjust font size as needed */
     color: #666; /* Placeholder text color */
@@ -194,7 +203,9 @@ footer {
 }
 
 .btn {
-    display: inline-block;
+    /* display: inline-block; */
+    width:100%;
+    height:50px;
     padding: 12px 24px;
     background-color: green;
     color: #fff;
@@ -209,4 +220,128 @@ footer {
 
 .btn:hover {
     background-color: #333;
+}
+
+
+
+
+/* ========================= */
+/* Responsive Design */
+/* ========================= */
+
+@media screen and (max-width: 992px) {
+
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section{
+        flex-direction: column;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    nav ul li{
+        display:block;
+        margin:10px 0;
+    }
+
+    .right-section{
+        margin-top:15px;
+        gap:10px;
+    }
+
+    .mid-area{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .left-side,
+    .right-side{
+        width:100%;
+        max-width:100%;
+    }
+
+    .map{
+        height:350px;
+    }
+
+    .form-container{
+        padding-top:20px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    header{
+        padding:15px;
+    }
+
+    .logo a.cara-link{
+        font-size:28px;
+    }
+
+    .container{
+        padding:10px;
+    }
+
+    .map{
+        height:300px;
+    }
+
+    .form-container{
+        padding:15px;
+    }
+
+    .form-container input,
+    .form-container select{
+        font-size:15px;
+    }
+
+    .btn{
+        font-size:15px;
+    }
+
+    #fare{
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .logo a.cara-link{
+        font-size:24px;
+    }
+
+    nav ul li{
+        margin:8px 0;
+    }
+
+    .map{
+        height:250px;
+    }
+
+    .form-container{
+        padding:10px;
+    }
+
+    .form-container input,
+    .form-container select{
+        height:42px;
+        font-size:14px;
+    }
+
+    .btn{
+        height:45px;
+        font-size:14px;
+    }
+
+    #fare{
+        height:45px;
+        font-size:16px;
+        line-height:45px;
+    }
 }
