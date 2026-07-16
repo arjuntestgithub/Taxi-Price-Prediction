@@ -19,16 +19,10 @@
           </div>
           <nav>
             <ul>
-              <li><a href="/">Cab Rides</a></li>
-              <li><a href="/">Drive</a></li>
-              <li><a href="/">Business</a></li>
-              <li><a href="/">Help</a></li>
+              <li><a href="/drive">Cab Rides</a></li>
+              <li><a href="/">Location</a></li>
             </ul>
           </nav>
-        </div>
-        <div class="right-section">
-          <a href="#" class="login-btn">Login</a>
-          <a href="#">Sign Up</a>
         </div>
       </div>
     </header>
@@ -42,14 +36,36 @@
       <div class="right-side">
         <div class="form-container">
           <form action="/predict" method="post">
-              <input type="text" id="pickup_longitude" name="pickup_longitude" placeholder="Pickup Longitude:" required><br>
+              <input 
+                  type="text" 
+                  id="pickup" 
+                  name="pickup"
+                  placeholder="Pickup location"
+                  required
+              />
+              <input 
+                  type="text" 
+                  id="drop" 
+                  name="drop"
+                  placeholder="Drop location"
+                  required
+              />
+              <!-- <input type="text" id="pickup_longitude" name="pickup_longitude" placeholder="Pickup Longitude:" required><br>
               <input type="text" id="pickup_latitude" name="pickup_latitude" placeholder="Pickup Latitude:" required><br>
               <input type="text" id="dropoff_longitude" name="dropoff_longitude" placeholder="Dropoff Longitude:" required><br>
-              <input type="text" id="dropoff_latitude" name="dropoff_latitude" placeholder="Dropoff Latitude:" required><br>
+              <input type="text" id="dropoff_latitude" name="dropoff_latitude" placeholder="Dropoff Latitude:" required><br> -->
               <input type="datetime-local" id="pickup_datetime" name="pickup_datetime" placeholder="Pickup Date Time:" required><br>
               <input type="number" id="passenger_count" name="passenger_count" min="1" placeholder="Passenger Count:" required><br>
               <button type="submit" class="btn">Predict Fare</button>
-              <input type="text" id="fare" name="fare" placeholder="Cab Fare:" value="${{ fare }}" readonly><br>
+              <input type="text" id="fare" name="fare" placeholder="Cab Fare:" value="{{ fare }}" readonly><br>
+              <div class="inputs">
+        
+
+              <!-- <button type="button" class="swap-btn" id="swap-btn" aria-label="Swap pickup and drop">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 3v18M17 3l-4 4M17 3l4 4M7 21V3M7 21l4-4M7 21l-4-4"/>
+                </svg>
+              </button> -->
 
               
           </form>
